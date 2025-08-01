@@ -41,9 +41,9 @@ def main():
     fert_rate=st.text_input('Enter the average children born to a women in the country')
     lf=st.text_input('Enter the average life expectancy in the country')
 
-   in_data=[child_mor,exp,hel,imp,income,inf,lf,fert_rate,gdp]
+    in_data=[child_mor,exp,hel,imp,income,inf,lf,fert_rate,gdp]
 
-   if st.button('Predict'):
+    if st.button('Predict'):
        response = prediction(in_data)
        st.success(response)
 
