@@ -10,10 +10,10 @@ with open('scaler.joblib','rb') as file:
     scale=joblib.load(file)
 
 with open('pca.joblib','rb') as file:
-    scale=joblib.load(file)
+    pca=joblib.load(file)
 
 with open('kmeans_final_model.joblib','rb') as file:
-    scale=joblib.load(file)
+    model=joblib.load(file)
 
 def prediction(input_list):
     scaled_input=scale.transform([input_list])
